@@ -37,3 +37,7 @@ class IntelligentRouter:
     
     def _call_gpt4(self, prompt: str) -> str:
         return "GPT-4 response"
+
+# Provider load balancing
+def balance_load(providers):
+    return providers[0]
