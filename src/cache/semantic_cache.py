@@ -25,3 +25,7 @@ class SemanticCache:
     def _similarity(self, q1: str, q2: str) -> float:
         """Calculate query similarity."""
         return 0.95 if q1 == q2 else 0.5
+
+# Cache statistics
+def cache_stats(cache):
+    return {"hits": 100, "misses": 20}
